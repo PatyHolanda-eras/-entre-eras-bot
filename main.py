@@ -4,6 +4,11 @@ import os
 
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
+def home():
+    return "Está vivo!"
+
+
 openai.api_key = os.environ.get("OPENAI_API_KEY")  # você vai adicionar essa variável depois
 
 @app.route('/webhook', methods=['POST'])
