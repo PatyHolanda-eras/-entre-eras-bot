@@ -9,7 +9,7 @@ def home():
     return "Está vivo!"
 
 
-openai.api_key = os.environ.get("OPENAI_API_KEY")  # você vai adicionar essa variável depois
+openai.api_key = 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 # você vai adicionar essa variável depois
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
